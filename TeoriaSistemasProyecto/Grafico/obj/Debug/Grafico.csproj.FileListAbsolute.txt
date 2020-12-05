@@ -50,3 +50,7 @@ C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\
 C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.csproj.CopyComplete
 C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.exe
 C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Grafico.exe.manifest
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Grafico.application
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.exe.manifest
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.application
