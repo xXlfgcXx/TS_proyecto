@@ -24,3 +24,29 @@ C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Grafico\bin\Deb
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Grafico\bin\Debug\System.IO.Packaging.dll
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Grafico\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Grafico\bin\Debug\System.IO.Packaging.xml
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Grafico.exe.config
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Grafico.exe
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Grafico.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Entidades.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Negocios.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\System.IO.Packaging.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Datos.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Entidades.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Negocios.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\System.IO.Packaging.xml
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Datos.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\bin\Debug\Datos.dll.config
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.csprojAssemblyReference.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.Folder_Estudiante.G_menuEstudiante.resources
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.Folder_Login.G_Login.resources
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.Folder_Login.G_recuperar.resources
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.Folder_Menu.G_menuAdmin.resources
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.Folder_Profe.G_menuProfe.resources
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.Properties.Resources.resources
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.csproj.GenerateResource.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.csproj.CoreCompileInputs.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.csproj.CopyComplete
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.exe
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Grafico\obj\Debug\Grafico.pdb

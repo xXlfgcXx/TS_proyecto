@@ -8,3 +8,13 @@ C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Datos\obj\Debug
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Datos\bin\Debug\Entidades.dll
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Datos\bin\Debug\Entidades.pdb
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\bin\Debug\Datos.dll.config
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\bin\Debug\Datos.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\bin\Debug\Datos.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\bin\Debug\Entidades.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\bin\Debug\Entidades.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\obj\Debug\Datos.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Datos\obj\Debug\Datos.pdb

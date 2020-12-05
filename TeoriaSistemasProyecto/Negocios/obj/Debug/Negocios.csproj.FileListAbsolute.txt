@@ -10,3 +10,15 @@ C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Negocios\obj\De
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Negocios\obj\Debug\Negocios.pdb
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Negocios\bin\Debug\Entidades.dll
 C:\Proyectos VS2019\Teoria Sistemas Local\TeoriaSistemasProyecto\Negocios\bin\Debug\Entidades.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Negocios.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Negocios.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Datos.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Entidades.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Datos.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Datos.dll.config
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\bin\Debug\Entidades.pdb
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\obj\Debug\Negocios.dll
+C:\Users\leand\Documents\GIT_TeoriaS\TS_proyecto\TeoriaSistemasProyecto\Negocios\obj\Debug\Negocios.pdb
