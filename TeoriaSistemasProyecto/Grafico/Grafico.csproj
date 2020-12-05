@@ -115,6 +115,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Entidades.E_empleado.datasource" />
+    <None Include="Properties\DataSources\Entidades.E_estudiante.datasource" />
+    <None Include="Properties\DataSources\Entidades.E_materia.datasource" />
+    <None Include="Properties\DataSources\Entidades.E_matricula.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -158,6 +158,8 @@ namespace Datos
                       on dato.codigoMateria equals dato2.codigo
                       join dato3 in db.estudiantes
                       on dato.usuarioEst equals dato3.usuario
+                      join dato4 in db.empleados
+                      on dato2.usuarioEmple equals dato4.usuario
                       where dato2.usuarioEmple == usu
                       select new
                       {
@@ -167,7 +169,9 @@ namespace Datos
                           dato3.apellidoMaterno,
                           dato3.apellidoPaterno,
                           dato3.identificacion,
-                          dato3.email
+                          dato3.email,
+                          dato4.usuario, 
+                          dato4.nombre
                       };
             var lista = txt.ToList();
             foreach (var item in lista)
@@ -176,10 +180,13 @@ namespace Datos
                 {
                     _codigoMat = item.codigo,
                     _nombreMat = item.nombreM,
-                    _nombreProf = item.nombreE,
+                    _nombreEst = item.nombreE,
                     _ape1 = item.apellidoMaterno,
                     _ape2 = item.apellidoPaterno,
-                    _email = item.email
+                    _ideEst = item.identificacion,
+                    _email = item.email,
+                    _usuEst= item.usuario,
+                    _nombreProf = item.nombre
                 });
             }
             return _list;

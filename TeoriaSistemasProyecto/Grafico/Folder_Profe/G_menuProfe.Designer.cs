@@ -29,19 +29,29 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.p_cursos = new System.Windows.Forms.Panel();
-            this.btn_buscarMat = new System.Windows.Forms.Button();
-            this.txt_buscarMat = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dgv_listaEstProf = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lbl_rol = new System.Windows.Forms.Label();
             this.lbl_nombre = new System.Windows.Forms.Label();
             this.btn_perfilProf = new System.Windows.Forms.Button();
             this.btn_cursosAsig = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
+            this.p_cursos = new System.Windows.Forms.Panel();
+            this.btn_buscarMat = new System.Windows.Forms.Button();
+            this.txt_buscarMat = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.dgv_listaEstProf = new System.Windows.Forms.DataGridView();
+            this.codigoMatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreMatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreEstDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ape1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ape2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ematriculaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.p_perfil = new System.Windows.Forms.Panel();
             this.btn_guardarE = new System.Windows.Forms.Button();
             this.msk_fechaNacE = new System.Windows.Forms.MaskedTextBox();
@@ -73,6 +83,7 @@
             this.panel1.SuspendLayout();
             this.p_cursos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listaEstProf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ematriculaBindingSource)).BeginInit();
             this.p_perfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error2)).BeginInit();
@@ -91,77 +102,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(174, 379);
             this.panel1.TabIndex = 0;
-            // 
-            // p_cursos
-            // 
-            this.p_cursos.Controls.Add(this.btn_buscarMat);
-            this.p_cursos.Controls.Add(this.txt_buscarMat);
-            this.p_cursos.Controls.Add(this.label3);
-            this.p_cursos.Controls.Add(this.dgv_listaEstProf);
-            this.p_cursos.Controls.Add(this.label4);
-            this.p_cursos.Controls.Add(this.label2);
-            this.p_cursos.Location = new System.Drawing.Point(203, 22);
-            this.p_cursos.Name = "p_cursos";
-            this.p_cursos.Size = new System.Drawing.Size(585, 402);
-            this.p_cursos.TabIndex = 1;
-            this.p_cursos.Visible = false;
-            // 
-            // btn_buscarMat
-            // 
-            this.btn_buscarMat.BackColor = System.Drawing.Color.White;
-            this.btn_buscarMat.ForeColor = System.Drawing.Color.Black;
-            this.btn_buscarMat.Location = new System.Drawing.Point(184, 107);
-            this.btn_buscarMat.Name = "btn_buscarMat";
-            this.btn_buscarMat.Size = new System.Drawing.Size(75, 23);
-            this.btn_buscarMat.TabIndex = 7;
-            this.btn_buscarMat.Text = "Filtrar.";
-            this.btn_buscarMat.UseVisualStyleBackColor = false;
-            this.btn_buscarMat.Click += new System.EventHandler(this.btn_buscarMat_Click);
-            // 
-            // txt_buscarMat
-            // 
-            this.txt_buscarMat.Location = new System.Drawing.Point(21, 110);
-            this.txt_buscarMat.Name = "txt_buscarMat";
-            this.txt_buscarMat.Size = new System.Drawing.Size(157, 20);
-            this.txt_buscarMat.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(227, 14);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Ingrese el curso por el cual quiere filtrar.";
-            // 
-            // dgv_listaEstProf
-            // 
-            this.dgv_listaEstProf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_listaEstProf.Location = new System.Drawing.Point(21, 193);
-            this.dgv_listaEstProf.Name = "dgv_listaEstProf";
-            this.dgv_listaEstProf.Size = new System.Drawing.Size(544, 191);
-            this.dgv_listaEstProf.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 159);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 14);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Lista de estudiantes.";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(139, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(371, 19);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "LISTA DE CURSOS Y ESTUDIANTES ASIGNADOS.";
             // 
             // lbl_rol
             // 
@@ -218,6 +158,169 @@
             this.btn_cerrar.Text = "Cerrar.";
             this.btn_cerrar.UseVisualStyleBackColor = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
+            // 
+            // p_cursos
+            // 
+            this.p_cursos.Controls.Add(this.btn_buscarMat);
+            this.p_cursos.Controls.Add(this.txt_buscarMat);
+            this.p_cursos.Controls.Add(this.label3);
+            this.p_cursos.Controls.Add(this.dgv_listaEstProf);
+            this.p_cursos.Controls.Add(this.label4);
+            this.p_cursos.Controls.Add(this.label2);
+            this.p_cursos.Location = new System.Drawing.Point(203, 22);
+            this.p_cursos.Name = "p_cursos";
+            this.p_cursos.Size = new System.Drawing.Size(585, 402);
+            this.p_cursos.TabIndex = 1;
+            this.p_cursos.Visible = false;
+            // 
+            // btn_buscarMat
+            // 
+            this.btn_buscarMat.BackColor = System.Drawing.Color.White;
+            this.btn_buscarMat.ForeColor = System.Drawing.Color.Black;
+            this.btn_buscarMat.Location = new System.Drawing.Point(184, 107);
+            this.btn_buscarMat.Name = "btn_buscarMat";
+            this.btn_buscarMat.Size = new System.Drawing.Size(75, 23);
+            this.btn_buscarMat.TabIndex = 7;
+            this.btn_buscarMat.Text = "Filtrar.";
+            this.btn_buscarMat.UseVisualStyleBackColor = false;
+            this.btn_buscarMat.Click += new System.EventHandler(this.btn_buscarMat_Click);
+            // 
+            // txt_buscarMat
+            // 
+            this.txt_buscarMat.Location = new System.Drawing.Point(21, 110);
+            this.txt_buscarMat.Name = "txt_buscarMat";
+            this.txt_buscarMat.Size = new System.Drawing.Size(157, 20);
+            this.txt_buscarMat.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(21, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(227, 14);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Ingrese el curso por el cual quiere filtrar.";
+            // 
+            // dgv_listaEstProf
+            // 
+            this.dgv_listaEstProf.AllowUserToAddRows = false;
+            this.dgv_listaEstProf.AllowUserToDeleteRows = false;
+            this.dgv_listaEstProf.AutoGenerateColumns = false;
+            this.dgv_listaEstProf.BackgroundColor = System.Drawing.Color.CadetBlue;
+            this.dgv_listaEstProf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgv_listaEstProf.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_listaEstProf.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_listaEstProf.ColumnHeadersHeight = 27;
+            this.dgv_listaEstProf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_listaEstProf.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigoMatDataGridViewTextBoxColumn,
+            this.nombreMatDataGridViewTextBoxColumn,
+            this.nombreEstDataGridViewTextBoxColumn,
+            this.ape1DataGridViewTextBoxColumn,
+            this.ape2DataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dgv_listaEstProf.DataSource = this.ematriculaBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_listaEstProf.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_listaEstProf.EnableHeadersVisualStyles = false;
+            this.dgv_listaEstProf.GridColor = System.Drawing.Color.CadetBlue;
+            this.dgv_listaEstProf.Location = new System.Drawing.Point(21, 193);
+            this.dgv_listaEstProf.Name = "dgv_listaEstProf";
+            this.dgv_listaEstProf.ReadOnly = true;
+            this.dgv_listaEstProf.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_listaEstProf.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_listaEstProf.RowHeadersVisible = false;
+            this.dgv_listaEstProf.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgv_listaEstProf.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_listaEstProf.Size = new System.Drawing.Size(544, 191);
+            this.dgv_listaEstProf.TabIndex = 4;
+            // 
+            // codigoMatDataGridViewTextBoxColumn
+            // 
+            this.codigoMatDataGridViewTextBoxColumn.DataPropertyName = "_codigoMat";
+            this.codigoMatDataGridViewTextBoxColumn.HeaderText = "Codigo.";
+            this.codigoMatDataGridViewTextBoxColumn.Name = "codigoMatDataGridViewTextBoxColumn";
+            this.codigoMatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreMatDataGridViewTextBoxColumn
+            // 
+            this.nombreMatDataGridViewTextBoxColumn.DataPropertyName = "_nombreMat";
+            this.nombreMatDataGridViewTextBoxColumn.HeaderText = "Nombre materia.";
+            this.nombreMatDataGridViewTextBoxColumn.Name = "nombreMatDataGridViewTextBoxColumn";
+            this.nombreMatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreEstDataGridViewTextBoxColumn
+            // 
+            this.nombreEstDataGridViewTextBoxColumn.DataPropertyName = "_nombreEst";
+            this.nombreEstDataGridViewTextBoxColumn.HeaderText = "Nombre estudiante.";
+            this.nombreEstDataGridViewTextBoxColumn.Name = "nombreEstDataGridViewTextBoxColumn";
+            this.nombreEstDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ape1DataGridViewTextBoxColumn
+            // 
+            this.ape1DataGridViewTextBoxColumn.DataPropertyName = "_ape1";
+            this.ape1DataGridViewTextBoxColumn.HeaderText = "Apellido.";
+            this.ape1DataGridViewTextBoxColumn.Name = "ape1DataGridViewTextBoxColumn";
+            this.ape1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ape2DataGridViewTextBoxColumn
+            // 
+            this.ape2DataGridViewTextBoxColumn.DataPropertyName = "_ape2";
+            this.ape2DataGridViewTextBoxColumn.HeaderText = "Apellido.";
+            this.ape2DataGridViewTextBoxColumn.Name = "ape2DataGridViewTextBoxColumn";
+            this.ape2DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "_email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email.";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ematriculaBindingSource
+            // 
+            this.ematriculaBindingSource.DataSource = typeof(Entidades.E_matricula);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 159);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 14);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Lista de estudiantes.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(139, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(371, 19);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "LISTA DE CURSOS Y ESTUDIANTES ASIGNADOS.";
             // 
             // p_perfil
             // 
@@ -504,6 +607,7 @@
             this.p_cursos.ResumeLayout(false);
             this.p_cursos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listaEstProf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ematriculaBindingSource)).EndInit();
             this.p_perfil.ResumeLayout(false);
             this.p_perfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.error1)).EndInit();
@@ -557,5 +661,12 @@
         private System.Windows.Forms.ErrorProvider error2;
         private System.Windows.Forms.ErrorProvider error3;
         private System.Windows.Forms.ErrorProvider error4;
+        private System.Windows.Forms.BindingSource ematriculaBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoMatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreMatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreEstDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ape1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ape2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }
 }

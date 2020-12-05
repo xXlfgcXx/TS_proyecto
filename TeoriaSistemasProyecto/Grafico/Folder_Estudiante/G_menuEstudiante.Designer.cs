@@ -63,21 +63,31 @@
             this.label5 = new System.Windows.Forms.Label();
             this.p_materiaM = new System.Windows.Forms.Panel();
             this.dgv_materiasM = new System.Windows.Forms.DataGridView();
+            this.codigoMatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreMatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreProfDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ape1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ape2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ematriculaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.error1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.error2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.error3 = new System.Windows.Forms.ErrorProvider(this.components);
             this.error4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.error5 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eempleadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.p_perfilEst.SuspendLayout();
             this.p_materiaM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_materiasM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ematriculaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eempleadoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -395,11 +405,12 @@
             // 
             this.dgv_materiasM.AllowUserToAddRows = false;
             this.dgv_materiasM.AllowUserToDeleteRows = false;
+            this.dgv_materiasM.AutoGenerateColumns = false;
             this.dgv_materiasM.BackgroundColor = System.Drawing.Color.CadetBlue;
             this.dgv_materiasM.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_materiasM.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Teal;
@@ -407,6 +418,14 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgv_materiasM.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_materiasM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgv_materiasM.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigoMatDataGridViewTextBoxColumn,
+            this.nombreMatDataGridViewTextBoxColumn,
+            this.nombreProfDataGridViewTextBoxColumn,
+            this.ape1DataGridViewTextBoxColumn,
+            this.ape2DataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn});
+            this.dgv_materiasM.DataSource = this.ematriculaBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.CadetBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -433,6 +452,52 @@
             this.dgv_materiasM.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_materiasM.Size = new System.Drawing.Size(568, 219);
             this.dgv_materiasM.TabIndex = 1;
+            // 
+            // codigoMatDataGridViewTextBoxColumn
+            // 
+            this.codigoMatDataGridViewTextBoxColumn.DataPropertyName = "_codigoMat";
+            this.codigoMatDataGridViewTextBoxColumn.HeaderText = "Codigo materia.";
+            this.codigoMatDataGridViewTextBoxColumn.Name = "codigoMatDataGridViewTextBoxColumn";
+            this.codigoMatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreMatDataGridViewTextBoxColumn
+            // 
+            this.nombreMatDataGridViewTextBoxColumn.DataPropertyName = "_nombreMat";
+            this.nombreMatDataGridViewTextBoxColumn.HeaderText = "Nombre materia.";
+            this.nombreMatDataGridViewTextBoxColumn.Name = "nombreMatDataGridViewTextBoxColumn";
+            this.nombreMatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreProfDataGridViewTextBoxColumn
+            // 
+            this.nombreProfDataGridViewTextBoxColumn.DataPropertyName = "_nombreProf";
+            this.nombreProfDataGridViewTextBoxColumn.HeaderText = "Nombre profesor.";
+            this.nombreProfDataGridViewTextBoxColumn.Name = "nombreProfDataGridViewTextBoxColumn";
+            this.nombreProfDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ape1DataGridViewTextBoxColumn
+            // 
+            this.ape1DataGridViewTextBoxColumn.DataPropertyName = "_ape1";
+            this.ape1DataGridViewTextBoxColumn.HeaderText = "Apellido.";
+            this.ape1DataGridViewTextBoxColumn.Name = "ape1DataGridViewTextBoxColumn";
+            this.ape1DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ape2DataGridViewTextBoxColumn
+            // 
+            this.ape2DataGridViewTextBoxColumn.DataPropertyName = "_ape2";
+            this.ape2DataGridViewTextBoxColumn.HeaderText = "Apellido.";
+            this.ape2DataGridViewTextBoxColumn.Name = "ape2DataGridViewTextBoxColumn";
+            this.ape2DataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "_email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email.";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ematriculaBindingSource
+            // 
+            this.ematriculaBindingSource.DataSource = typeof(Entidades.E_matricula);
             // 
             // label1
             // 
@@ -464,6 +529,10 @@
             // 
             this.error5.ContainerControl = this;
             // 
+            // eempleadoBindingSource
+            // 
+            this.eempleadoBindingSource.DataSource = typeof(Entidades.E_empleado);
+            // 
             // G_menuEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,11 +553,13 @@
             this.p_materiaM.ResumeLayout(false);
             this.p_materiaM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_materiasM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ematriculaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eempleadoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -532,5 +603,13 @@
         private System.Windows.Forms.ErrorProvider error3;
         private System.Windows.Forms.ErrorProvider error4;
         private System.Windows.Forms.ErrorProvider error5;
+        private System.Windows.Forms.BindingSource eempleadoBindingSource;
+        private System.Windows.Forms.BindingSource ematriculaBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigoMatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreMatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreProfDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ape1DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ape2DataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
     }
 }
