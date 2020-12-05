@@ -113,7 +113,8 @@ namespace Datos
                     _apellidoDos = _emple.apellidoPaterno,
                     _email = _emple.email,
                     _telefono = _emple.telefono,
-                    _usuario = _emple.usuario
+                    _usuario = _emple.usuario,
+                    _fechaNace = _emple.fechaNace.ToString()
                 });
             }
             return listEmple;

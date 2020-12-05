@@ -52,7 +52,7 @@ namespace Grafico.Folder_Login
                         mail.IsBodyHtml = true;
                         using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                         {
-                            smtp.Credentials = new NetworkCredential("lfgc.1001@gmail.com", "JOption18!");
+                            smtp.Credentials = new NetworkCredential("ts.uam01@gmail.com", "gmail@pass");
                             smtp.EnableSsl = true;
                             smtp.Send(mail);
                         }

@@ -303,7 +303,7 @@ namespace Datos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaNace", DbType="Date NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaNace", DbType="DateTime NOT NULL")]
 		public System.DateTime fechaNace
 		{
 			get
@@ -801,7 +801,7 @@ namespace Datos
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaNaci", DbType="Date NOT NULL")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fechaNaci", DbType="DateTime NOT NULL")]
 		public System.DateTime fechaNaci
 		{
 			get

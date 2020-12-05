@@ -38,14 +38,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.gb_email = new System.Windows.Forms.GroupBox();
-            this.gb_cod = new System.Windows.Forms.GroupBox();
             this.gb_nuevaContra = new System.Windows.Forms.GroupBox();
+            this.gb_cod = new System.Windows.Forms.GroupBox();
             this.btn_nuevaContra = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_contraAct = new System.Windows.Forms.TextBox();
             this.gb_email.SuspendLayout();
-            this.gb_cod.SuspendLayout();
             this.gb_nuevaContra.SuspendLayout();
+            this.gb_cod.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -144,7 +144,6 @@
             // 
             this.gb_email.BackColor = System.Drawing.Color.CadetBlue;
             this.gb_email.Controls.Add(this.label1);
-            this.gb_email.Controls.Add(this.gb_nuevaContra);
             this.gb_email.Controls.Add(this.label4);
             this.gb_email.Controls.Add(this.txt_email);
             this.gb_email.Controls.Add(this.btn_recuperar);
@@ -154,6 +153,19 @@
             this.gb_email.TabIndex = 17;
             this.gb_email.TabStop = false;
             // 
+            // gb_nuevaContra
+            // 
+            this.gb_nuevaContra.BackColor = System.Drawing.Color.CadetBlue;
+            this.gb_nuevaContra.Controls.Add(this.btn_nuevaContra);
+            this.gb_nuevaContra.Controls.Add(this.label5);
+            this.gb_nuevaContra.Controls.Add(this.txt_contraAct);
+            this.gb_nuevaContra.Location = new System.Drawing.Point(12, 12);
+            this.gb_nuevaContra.Name = "gb_nuevaContra";
+            this.gb_nuevaContra.Size = new System.Drawing.Size(237, 215);
+            this.gb_nuevaContra.TabIndex = 19;
+            this.gb_nuevaContra.TabStop = false;
+            this.gb_nuevaContra.Visible = false;
+            // 
             // gb_cod
             // 
             this.gb_cod.BackColor = System.Drawing.Color.CadetBlue;
@@ -162,26 +174,12 @@
             this.gb_cod.Controls.Add(this.label3);
             this.gb_cod.Controls.Add(this.btn_validar);
             this.gb_cod.Controls.Add(this.btn_volver);
-            this.gb_cod.Location = new System.Drawing.Point(0, 0);
+            this.gb_cod.Location = new System.Drawing.Point(12, 12);
             this.gb_cod.Name = "gb_cod";
             this.gb_cod.Size = new System.Drawing.Size(237, 215);
             this.gb_cod.TabIndex = 18;
             this.gb_cod.TabStop = false;
             this.gb_cod.Visible = false;
-            // 
-            // gb_nuevaContra
-            // 
-            this.gb_nuevaContra.BackColor = System.Drawing.Color.CadetBlue;
-            this.gb_nuevaContra.Controls.Add(this.gb_cod);
-            this.gb_nuevaContra.Controls.Add(this.btn_nuevaContra);
-            this.gb_nuevaContra.Controls.Add(this.label5);
-            this.gb_nuevaContra.Controls.Add(this.txt_contraAct);
-            this.gb_nuevaContra.Location = new System.Drawing.Point(0, 4);
-            this.gb_nuevaContra.Name = "gb_nuevaContra";
-            this.gb_nuevaContra.Size = new System.Drawing.Size(237, 215);
-            this.gb_nuevaContra.TabIndex = 19;
-            this.gb_nuevaContra.TabStop = false;
-            this.gb_nuevaContra.Visible = false;
             // 
             // btn_nuevaContra
             // 
@@ -217,7 +215,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(268, 269);
+            this.ClientSize = new System.Drawing.Size(261, 239);
+            this.Controls.Add(this.gb_cod);
+            this.Controls.Add(this.gb_nuevaContra);
             this.Controls.Add(this.gb_email);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "G_recuperar";
@@ -226,10 +226,10 @@
             this.Load += new System.EventHandler(this.G_recuperar_Load);
             this.gb_email.ResumeLayout(false);
             this.gb_email.PerformLayout();
-            this.gb_cod.ResumeLayout(false);
-            this.gb_cod.PerformLayout();
             this.gb_nuevaContra.ResumeLayout(false);
             this.gb_nuevaContra.PerformLayout();
+            this.gb_cod.ResumeLayout(false);
+            this.gb_cod.PerformLayout();
             this.ResumeLayout(false);
 
         }
