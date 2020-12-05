@@ -113,6 +113,14 @@
             this.txt_buscarProfM = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.dgv_listaProfM = new System.Windows.Forms.DataGridView();
+            this.nombreDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoUnoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidoDosDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaNaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usuarioDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eempleadoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btn_guardarM = new System.Windows.Forms.Button();
             this.msk_codMateria = new System.Windows.Forms.MaskedTextBox();
             this.txt_nomMateria = new System.Windows.Forms.TextBox();
@@ -225,14 +233,6 @@
             this.error1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.error4 = new System.Windows.Forms.ErrorProvider(this.components);
             this.error5 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.eempleadoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.nombreDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoUnoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidoDosDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaNaceDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.p_menu.SuspendLayout();
             this.p_estudiantes.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -247,6 +247,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.emateriaBindingSource)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listaProfM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eempleadoBindingSource1)).BeginInit();
             this.p_matricula.SuspendLayout();
             this.p_perfil.SuspendLayout();
             this.p_docentes.SuspendLayout();
@@ -260,7 +261,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.error1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.error5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eempleadoBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // p_menu
@@ -375,7 +375,7 @@
             this.p_estudiantes.Controls.Add(this.tabControl1);
             this.p_estudiantes.Location = new System.Drawing.Point(195, 12);
             this.p_estudiantes.Name = "p_estudiantes";
-            this.p_estudiantes.Size = new System.Drawing.Size(593, 426);
+            this.p_estudiantes.Size = new System.Drawing.Size(634, 426);
             this.p_estudiantes.TabIndex = 2;
             this.p_estudiantes.Visible = false;
             // 
@@ -781,7 +781,7 @@
             this.p_materias.Controls.Add(this.tabControl3);
             this.p_materias.Location = new System.Drawing.Point(195, 12);
             this.p_materias.Name = "p_materias";
-            this.p_materias.Size = new System.Drawing.Size(593, 426);
+            this.p_materias.Size = new System.Drawing.Size(634, 426);
             this.p_materias.TabIndex = 3;
             this.p_materias.Visible = false;
             // 
@@ -1087,6 +1087,59 @@
             this.dgv_listaProfM.Size = new System.Drawing.Size(543, 126);
             this.dgv_listaProfM.TabIndex = 7;
             // 
+            // nombreDataGridViewTextBoxColumn3
+            // 
+            this.nombreDataGridViewTextBoxColumn3.DataPropertyName = "_nombre";
+            this.nombreDataGridViewTextBoxColumn3.HeaderText = "Nombre.";
+            this.nombreDataGridViewTextBoxColumn3.Name = "nombreDataGridViewTextBoxColumn3";
+            this.nombreDataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // apellidoUnoDataGridViewTextBoxColumn1
+            // 
+            this.apellidoUnoDataGridViewTextBoxColumn1.DataPropertyName = "_apellidoUno";
+            this.apellidoUnoDataGridViewTextBoxColumn1.HeaderText = "Apellido.";
+            this.apellidoUnoDataGridViewTextBoxColumn1.Name = "apellidoUnoDataGridViewTextBoxColumn1";
+            this.apellidoUnoDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // apellidoDosDataGridViewTextBoxColumn1
+            // 
+            this.apellidoDosDataGridViewTextBoxColumn1.DataPropertyName = "_apellidoDos";
+            this.apellidoDosDataGridViewTextBoxColumn1.HeaderText = "Apellido.";
+            this.apellidoDosDataGridViewTextBoxColumn1.Name = "apellidoDosDataGridViewTextBoxColumn1";
+            this.apellidoDosDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // fechaNaceDataGridViewTextBoxColumn1
+            // 
+            this.fechaNaceDataGridViewTextBoxColumn1.DataPropertyName = "_fechaNace";
+            this.fechaNaceDataGridViewTextBoxColumn1.HeaderText = "Fecha nacimiento.";
+            this.fechaNaceDataGridViewTextBoxColumn1.Name = "fechaNaceDataGridViewTextBoxColumn1";
+            this.fechaNaceDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // emailDataGridViewTextBoxColumn2
+            // 
+            this.emailDataGridViewTextBoxColumn2.DataPropertyName = "_email";
+            this.emailDataGridViewTextBoxColumn2.HeaderText = "Email.";
+            this.emailDataGridViewTextBoxColumn2.Name = "emailDataGridViewTextBoxColumn2";
+            this.emailDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // telefonoDataGridViewTextBoxColumn2
+            // 
+            this.telefonoDataGridViewTextBoxColumn2.DataPropertyName = "_telefono";
+            this.telefonoDataGridViewTextBoxColumn2.HeaderText = "Telefono.";
+            this.telefonoDataGridViewTextBoxColumn2.Name = "telefonoDataGridViewTextBoxColumn2";
+            this.telefonoDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // usuarioDataGridViewTextBoxColumn2
+            // 
+            this.usuarioDataGridViewTextBoxColumn2.DataPropertyName = "_usuario";
+            this.usuarioDataGridViewTextBoxColumn2.HeaderText = "Usuario.";
+            this.usuarioDataGridViewTextBoxColumn2.Name = "usuarioDataGridViewTextBoxColumn2";
+            this.usuarioDataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // eempleadoBindingSource1
+            // 
+            this.eempleadoBindingSource1.DataSource = typeof(Entidades.E_empleado);
+            // 
             // btn_guardarM
             // 
             this.btn_guardarM.Location = new System.Drawing.Point(375, 92);
@@ -1184,7 +1237,7 @@
             this.p_matricula.Controls.Add(this.label46);
             this.p_matricula.Location = new System.Drawing.Point(195, 12);
             this.p_matricula.Name = "p_matricula";
-            this.p_matricula.Size = new System.Drawing.Size(593, 426);
+            this.p_matricula.Size = new System.Drawing.Size(634, 426);
             this.p_matricula.TabIndex = 2;
             this.p_matricula.Visible = false;
             this.p_matricula.Paint += new System.Windows.Forms.PaintEventHandler(this.p_matricula_Paint);
@@ -1689,7 +1742,7 @@
             this.p_perfil.Controls.Add(this.label5);
             this.p_perfil.Location = new System.Drawing.Point(195, 12);
             this.p_perfil.Name = "p_perfil";
-            this.p_perfil.Size = new System.Drawing.Size(593, 426);
+            this.p_perfil.Size = new System.Drawing.Size(634, 426);
             this.p_perfil.TabIndex = 4;
             this.p_perfil.Visible = false;
             this.p_perfil.Paint += new System.Windows.Forms.PaintEventHandler(this.p_perfil_Paint);
@@ -1936,7 +1989,7 @@
             this.p_docentes.Controls.Add(this.tabControl2);
             this.p_docentes.Location = new System.Drawing.Point(195, 12);
             this.p_docentes.Name = "p_docentes";
-            this.p_docentes.Size = new System.Drawing.Size(593, 426);
+            this.p_docentes.Size = new System.Drawing.Size(634, 426);
             this.p_docentes.TabIndex = 1;
             this.p_docentes.Visible = false;
             // 
@@ -2213,65 +2266,12 @@
             // 
             this.error5.ContainerControl = this;
             // 
-            // eempleadoBindingSource1
-            // 
-            this.eempleadoBindingSource1.DataSource = typeof(Entidades.E_empleado);
-            // 
-            // nombreDataGridViewTextBoxColumn3
-            // 
-            this.nombreDataGridViewTextBoxColumn3.DataPropertyName = "_nombre";
-            this.nombreDataGridViewTextBoxColumn3.HeaderText = "Nombre.";
-            this.nombreDataGridViewTextBoxColumn3.Name = "nombreDataGridViewTextBoxColumn3";
-            this.nombreDataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // apellidoUnoDataGridViewTextBoxColumn1
-            // 
-            this.apellidoUnoDataGridViewTextBoxColumn1.DataPropertyName = "_apellidoUno";
-            this.apellidoUnoDataGridViewTextBoxColumn1.HeaderText = "Apellido.";
-            this.apellidoUnoDataGridViewTextBoxColumn1.Name = "apellidoUnoDataGridViewTextBoxColumn1";
-            this.apellidoUnoDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // apellidoDosDataGridViewTextBoxColumn1
-            // 
-            this.apellidoDosDataGridViewTextBoxColumn1.DataPropertyName = "_apellidoDos";
-            this.apellidoDosDataGridViewTextBoxColumn1.HeaderText = "Apellido.";
-            this.apellidoDosDataGridViewTextBoxColumn1.Name = "apellidoDosDataGridViewTextBoxColumn1";
-            this.apellidoDosDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // fechaNaceDataGridViewTextBoxColumn1
-            // 
-            this.fechaNaceDataGridViewTextBoxColumn1.DataPropertyName = "_fechaNace";
-            this.fechaNaceDataGridViewTextBoxColumn1.HeaderText = "Fecha nacimiento.";
-            this.fechaNaceDataGridViewTextBoxColumn1.Name = "fechaNaceDataGridViewTextBoxColumn1";
-            this.fechaNaceDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // emailDataGridViewTextBoxColumn2
-            // 
-            this.emailDataGridViewTextBoxColumn2.DataPropertyName = "_email";
-            this.emailDataGridViewTextBoxColumn2.HeaderText = "Email.";
-            this.emailDataGridViewTextBoxColumn2.Name = "emailDataGridViewTextBoxColumn2";
-            this.emailDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // telefonoDataGridViewTextBoxColumn2
-            // 
-            this.telefonoDataGridViewTextBoxColumn2.DataPropertyName = "_telefono";
-            this.telefonoDataGridViewTextBoxColumn2.HeaderText = "Telefono.";
-            this.telefonoDataGridViewTextBoxColumn2.Name = "telefonoDataGridViewTextBoxColumn2";
-            this.telefonoDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // usuarioDataGridViewTextBoxColumn2
-            // 
-            this.usuarioDataGridViewTextBoxColumn2.DataPropertyName = "_usuario";
-            this.usuarioDataGridViewTextBoxColumn2.HeaderText = "Usuario.";
-            this.usuarioDataGridViewTextBoxColumn2.Name = "usuarioDataGridViewTextBoxColumn2";
-            this.usuarioDataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
             // G_menuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(841, 450);
             this.Controls.Add(this.p_estudiantes);
             this.Controls.Add(this.p_docentes);
             this.Controls.Add(this.p_materias);
@@ -2302,6 +2302,7 @@
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_listaProfM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eempleadoBindingSource1)).EndInit();
             this.p_matricula.ResumeLayout(false);
             this.p_matricula.PerformLayout();
             this.p_perfil.ResumeLayout(false);
@@ -2319,7 +2320,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.error1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.error5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eempleadoBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
