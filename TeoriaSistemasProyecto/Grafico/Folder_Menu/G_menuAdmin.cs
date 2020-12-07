@@ -673,21 +673,52 @@ namespace Grafico.Folder_Menu
 
         private void btn_identEstM_Click(object sender, EventArgs e)
         {
-            E_estudiante _est = new E_estudiante();
-            _est = _matricula.buscarEst(txt_usuMatEst.Text);
-            txt_nomEstM.Text = _est._nombre;
-            txt_ape1EstM.Text = _est._ape1;
-            txt_ape2EstM.Text = _est._ape2;
-            txt_idenEstM.Text = _est._identificacion; 
+            try
+            {
+                E_estudiante _est = new E_estudiante();
+                _est = _matricula.buscarEst(txt_usuMatEst.Text);
+                if(_est == null)
+                {
+                    MessageBox.Show("No existe el registro.");
+                }
+                else
+                {
+                    txt_nomEstM.Text = _est._nombre;
+                    txt_ape1EstM.Text = _est._ape1;
+                    txt_ape2EstM.Text = _est._ape2;
+                    txt_idenEstM.Text = _est._identificacion;
+                }
+                
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No existe el registro.");
+            }
+            
         }
 
         private void btn_busMatM_Click(object sender, EventArgs e)
         {
-            E_materia _mat = new E_materia();
-            _mat = _matricula.ObtenerMat(Convert.ToInt32(txt_busMatM.Text));
-            txt_codMatM.Text = _mat._codigo.ToString();
-            txt_nomMatM.Text = _mat._nombre;
-            txt_usuProfM.Text = _mat._usuarioEmple;
+            try
+            {
+                E_materia _mat = new E_materia();
+                _mat = _matricula.ObtenerMat(Convert.ToInt32(txt_busMatM.Text));
+                if (_mat == null)
+                {
+                    MessageBox.Show("No existe el registro.");
+                }
+                else
+                {
+                    txt_codMatM.Text = _mat._codigo.ToString();
+                    txt_nomMatM.Text = _mat._nombre;
+                    txt_usuProfM.Text = _mat._usuarioEmple;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No existe el registro.");
+            }
+            
         }
 
         private void txt_usuProfM_TextChanged(object sender, EventArgs e)

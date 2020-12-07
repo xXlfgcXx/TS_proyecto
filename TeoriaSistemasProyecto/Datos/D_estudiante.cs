@@ -97,21 +97,28 @@ namespace Datos
         }
         public E_estudiante obtenerDatosEst(string usu)
         {
-            E_estudiante obj = db.estudiantes.Where(val => val.usuario == usu || val.email == usu).Select(val => new E_estudiante()
+            try
             {
-                _nombre = val.nombreE,
-                _ape1 = val.apellidoMaterno,
-                _ape2 = val.apellidoPaterno,
-                _identificacion = val.identificacion,
-                _direccion = val.direccion,
-                _fechaNac = val.fechaNaci.ToString(),
-                _email = val.email,
-                _telefono = val.telefono,
-                _rol = val.rol.ToString(),
-                _usuario = val.usuario,
-                _contrasena = val.contrasena,
-            }).FirstOrDefault();
-            return obj;
+                E_estudiante obj = db.estudiantes.Where(val => val.usuario == usu || val.email == usu).Select(val => new E_estudiante()
+                {
+                    _nombre = val.nombreE,
+                    _ape1 = val.apellidoMaterno,
+                    _ape2 = val.apellidoPaterno,
+                    _identificacion = val.identificacion,
+                    _direccion = val.direccion,
+                    _fechaNac = val.fechaNaci.ToString(),
+                    _email = val.email,
+                    _telefono = val.telefono,
+                    _rol = val.rol.ToString(),
+                    _usuario = val.usuario,
+                    _contrasena = val.contrasena,
+                }).FirstOrDefault();
+                return obj;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
 
         public List<E_matricula> obtenerMateriasMatriculadas(string usu)
