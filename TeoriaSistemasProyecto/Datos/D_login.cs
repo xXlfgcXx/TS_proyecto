@@ -41,18 +41,26 @@ namespace Datos
         }
         public int verificarUsuario(string usu)
         {
-            var txt = (from dato in db.empleados
-                       where dato.email == usu
-                       select dato.estado).FirstOrDefault();
-            string resp = txt.ToString();
-            if(resp == "1")
+            try
             {
-                return 1;
+                var txt = (from dato in db.empleados
+                           where dato.email == usu
+                           select dato.estado).FirstOrDefault();
+                string resp = txt.ToString();
+                if (resp == "1")
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
             }
-            else
+            catch (Exception)
             {
                 return -1;
             }
+            
         }
         public int verificarCod (string email,string cod)
         {

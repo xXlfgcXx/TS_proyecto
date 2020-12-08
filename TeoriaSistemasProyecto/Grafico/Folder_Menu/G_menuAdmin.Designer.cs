@@ -373,9 +373,9 @@
             // p_estudiantes
             // 
             this.p_estudiantes.Controls.Add(this.tabControl1);
-            this.p_estudiantes.Location = new System.Drawing.Point(638, 282);
+            this.p_estudiantes.Location = new System.Drawing.Point(195, 12);
             this.p_estudiantes.Name = "p_estudiantes";
-            this.p_estudiantes.Size = new System.Drawing.Size(191, 156);
+            this.p_estudiantes.Size = new System.Drawing.Size(634, 426);
             this.p_estudiantes.TabIndex = 2;
             this.p_estudiantes.Visible = false;
             // 
@@ -779,9 +779,9 @@
             // p_materias
             // 
             this.p_materias.Controls.Add(this.tabControl3);
-            this.p_materias.Location = new System.Drawing.Point(553, 181);
+            this.p_materias.Location = new System.Drawing.Point(195, 12);
             this.p_materias.Name = "p_materias";
-            this.p_materias.Size = new System.Drawing.Size(276, 257);
+            this.p_materias.Size = new System.Drawing.Size(634, 426);
             this.p_materias.TabIndex = 3;
             this.p_materias.Visible = false;
             // 
@@ -1987,9 +1987,9 @@
             // p_docentes
             // 
             this.p_docentes.Controls.Add(this.tabControl2);
-            this.p_docentes.Location = new System.Drawing.Point(584, 212);
+            this.p_docentes.Location = new System.Drawing.Point(195, 12);
             this.p_docentes.Name = "p_docentes";
-            this.p_docentes.Size = new System.Drawing.Size(245, 226);
+            this.p_docentes.Size = new System.Drawing.Size(634, 426);
             this.p_docentes.TabIndex = 1;
             this.p_docentes.Visible = false;
             // 

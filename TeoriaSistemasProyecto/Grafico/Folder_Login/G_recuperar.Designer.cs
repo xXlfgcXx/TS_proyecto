@@ -39,10 +39,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.gb_email = new System.Windows.Forms.GroupBox();
             this.gb_nuevaContra = new System.Windows.Forms.GroupBox();
-            this.gb_cod = new System.Windows.Forms.GroupBox();
             this.btn_nuevaContra = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_contraAct = new System.Windows.Forms.TextBox();
+            this.gb_cod = new System.Windows.Forms.GroupBox();
             this.gb_email.SuspendLayout();
             this.gb_nuevaContra.SuspendLayout();
             this.gb_cod.SuspendLayout();
@@ -166,21 +166,6 @@
             this.gb_nuevaContra.TabStop = false;
             this.gb_nuevaContra.Visible = false;
             // 
-            // gb_cod
-            // 
-            this.gb_cod.BackColor = System.Drawing.Color.CadetBlue;
-            this.gb_cod.Controls.Add(this.label2);
-            this.gb_cod.Controls.Add(this.txt_codigo);
-            this.gb_cod.Controls.Add(this.label3);
-            this.gb_cod.Controls.Add(this.btn_validar);
-            this.gb_cod.Controls.Add(this.btn_volver);
-            this.gb_cod.Location = new System.Drawing.Point(12, 12);
-            this.gb_cod.Name = "gb_cod";
-            this.gb_cod.Size = new System.Drawing.Size(237, 215);
-            this.gb_cod.TabIndex = 18;
-            this.gb_cod.TabStop = false;
-            this.gb_cod.Visible = false;
-            // 
             // btn_nuevaContra
             // 
             this.btn_nuevaContra.BackColor = System.Drawing.Color.White;
@@ -209,6 +194,21 @@
             this.txt_contraAct.Name = "txt_contraAct";
             this.txt_contraAct.Size = new System.Drawing.Size(143, 20);
             this.txt_contraAct.TabIndex = 0;
+            // 
+            // gb_cod
+            // 
+            this.gb_cod.BackColor = System.Drawing.Color.CadetBlue;
+            this.gb_cod.Controls.Add(this.label2);
+            this.gb_cod.Controls.Add(this.txt_codigo);
+            this.gb_cod.Controls.Add(this.label3);
+            this.gb_cod.Controls.Add(this.btn_validar);
+            this.gb_cod.Controls.Add(this.btn_volver);
+            this.gb_cod.Location = new System.Drawing.Point(12, 12);
+            this.gb_cod.Name = "gb_cod";
+            this.gb_cod.Size = new System.Drawing.Size(237, 215);
+            this.gb_cod.TabIndex = 18;
+            this.gb_cod.TabStop = false;
+            this.gb_cod.Visible = false;
             // 
             // G_recuperar
             // 

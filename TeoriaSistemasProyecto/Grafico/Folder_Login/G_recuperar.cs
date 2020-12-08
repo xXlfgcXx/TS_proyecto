@@ -29,43 +29,51 @@ namespace Grafico.Folder_Login
         {
             Random _numRan = new Random();
             MailMessage _mail = new MailMessage();
-            int _resp = log.verificar(txt_email.Text.ToLower().Trim());
-            if(_resp == 1)
+            try
             {
-                string _num;
-                for (int i = 0; i < 1; i++)
+                int _resp = log.verificar(txt_email.Text.ToLower().Trim());
+                if (_resp == 1)
                 {
-                    _num = ($"{_numRan.Next(),8}");
-                    _sendEmail(_num);
-                }
-
-                void _sendEmail(string _numRa)
-                {
-                    using (MailMessage mail = new MailMessage())
+                    string _num;
+                    for (int i = 0; i < 1; i++)
                     {
-                        mail.From = new MailAddress("lfgc.1001@gmail.com");
-                        mail.To.Add("" + txt_email.Text.ToLower().Trim());
-                        mail.Subject = "Codigo de verificación.";
-                        mail.Body = "<div style='text-align:center;background:linear-gradient(to right,#051937,#004d7a," +
-                            "#008793,#00bf72,#a8eb12);font-family:Tahoma;color:white;'><br><br><h1>Codigo de verificacion.</h1><br><br><p>Su codigo de verificación " +
-                            "es: <b> " + _numRa + " </b></p><p>El codigo lo ingresa al iniciar sesion, con el se completa el registro.</p><br><br>";
-                        mail.IsBodyHtml = true;
-                        using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
-                        {
-                            smtp.Credentials = new NetworkCredential("ts.uam01@gmail.com", "gmail@pass");
-                            smtp.EnableSsl = true;
-                            smtp.Send(mail);
-                        }
+                        _num = ($"{_numRan.Next(),8}");
+                        _sendEmail(_num);
                     }
-                    log.numRan(txt_email.Text.ToLower().Trim(), _numRa);
-                    gb_cod.Show();
-                    gb_email.Hide();
+
+                    void _sendEmail(string _numRa)
+                    {
+                        using (MailMessage mail = new MailMessage())
+                        {
+                            mail.From = new MailAddress("ts.uam01@gmail.com");
+                            mail.To.Add("" + txt_email.Text.ToLower().Trim());
+                            mail.Subject = "Codigo de verificación.";
+                            mail.Body = "<div style='text-align:center;background:linear-gradient(to right,#051937,#004d7a," +
+                                "#008793,#00bf72,#a8eb12);font-family:Tahoma;color:white;'><br><br><h1>Codigo de verificacion.</h1><br><br><p>Su codigo de verificación " +
+                                "es: <b> " + _numRa + " </b></p><p>El codigo lo ingresa al iniciar sesion, con el se completa el registro.</p><br><br>";
+                            mail.IsBodyHtml = true;
+                            using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                            {
+                                smtp.Credentials = new NetworkCredential("ts.uam01@gmail.com", "gmail@pass");
+                                smtp.EnableSsl = true;
+                                smtp.Send(mail);
+                            }
+                        }
+                        log.numRan(txt_email.Text.ToLower().Trim(), _numRa);
+                        gb_cod.Show();
+                        gb_email.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Credenciales ingresadas no son validas.");
                 }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Credenciales ingresadas no son validas.");
+                MessageBox.Show("No se puede enviar el codigo.");
             }
+            
         }
 
         private void btn_volver_Click(object sender, EventArgs e)
