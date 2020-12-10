@@ -73,7 +73,7 @@ namespace Grafico.Folder_Login
             }
             else
             {
-                MessageBox.Show("Sus credenciales no son correctas.");
+                MessageBox.Show("No pueden haber campos en blanco.");
             }
         }
 
